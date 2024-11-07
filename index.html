@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Tesla</title>
+</head>
+<body>
+    <div class="header" id="header">
+        <nav>
+            <img src="./img/logo.png" alt="" class="logo">
+            <ul>
+                <li><a href="#" id="models">Model S</a></li>
+                <li><a href="#" id="model3">Model 3</a></li>
+                <li><a href="#" id="modelx">Model X</a></li>
+                <li><a href="#" id="modely">Model Y</a></li>
+            </ul>
+            <a href="#" class="btn">Reserve now</a>
+        </nav>
+        <div class="info">
+            <div>
+                <h2 id="seg">1.9s</h2>
+                <p>60mph</p>
+            </div>
+
+            <div>
+                <h2 id="mph">200mph</h2>
+                <p>Top speed</p>
+            </div>
+
+            <div>
+                <h2 id="range">396mi</h2>
+                <p>Max Range</p>
+            </div>
+
+            <div class="line"></div>
+
+            <div class=>
+                <h2 id="model">Model S</h2>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    //Modelos
+    let header = document.getElementById('header')
+    let ms = document.getElementById('models')
+    let m3 = document.getElementById('model3')
+    let mx = document.getElementById('modelx')
+    let my = document.getElementById('modely')
+    let model = document.getElementById('model')
+    //Aspectos
+    let seg = document.getElementById('seg')
+    let mph = document.getElementById('mph')
+    let range = document.getElementById('range')
+
+    ms.onclick = function(){
+        header.style.backgroundImage = 'url(./img/image-1.png)'
+        model.innerHTML = 'Model S'
+        seg.innerHTML = '1.9s'
+        mph.innerHTML = '200mph'
+        range.innerHTML = '396mi'
+    }
+
+    m3.onclick = function(){
+        header.style.backgroundImage = 'url(./img/image-2.png)'
+        model.innerHTML = 'Model 3'
+        seg.innerHTML = '2s'
+        mph.innerHTML = '240mph'
+        range.innerHTML = '380mi'
+    }
+
+    mx.onclick = function(){
+        header.style.backgroundImage = 'url(./img/image-3.png)'
+        model.innerHTML = 'Model X'
+        seg.innerHTML = '1.4s'
+        mph.innerHTML = '210mph'
+        range.innerHTML = '370mi'
+    }
+
+    my.onclick = function(){
+        header.style.backgroundImage = 'url(./img/image-4.png)'
+        model.innerHTML = 'Model Y'
+        seg.innerHTML = '3s'
+        mph.innerHTML = '12mph'
+        range.innerHTML = '0.2mi'
+    }
+</script>
+</html>
